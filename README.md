@@ -1,3 +1,12 @@
+# Raspple II customized pi-gen
+
+This is a customized version of [RPi-Distro/pi-gen]() customized for building
+Raspple II rather than Raspbian.  The default branch, "rasppleii", should not
+be pushed or merged upstream as it **will** mess with their tree and they will
+not appreciate it.
+
+[RPi-Distro/pi-gen]: https://github.com/RPi-Distro/pi-gen
+
 #TODO
 
 1. Simplify running a single stage
