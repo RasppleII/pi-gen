@@ -19,6 +19,7 @@ systemctl disable ssh
 systemctl enable regenerate_ssh_host_keys
 systemctl enable apply_noobs_os_config
 systemctl enable resize2fs_once
+systemctl set-default multi-user.target
 EOF
 
 on_chroot sh -e - << \EOF
