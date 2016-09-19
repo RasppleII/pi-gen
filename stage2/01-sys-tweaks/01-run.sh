@@ -33,6 +33,7 @@ done
 EOF
 
 on_chroot sh -e - <<EOF
+dpkg-reconfigure -f noninteractive tzdata
 setupcon --force --save-only -v
 EOF
 
