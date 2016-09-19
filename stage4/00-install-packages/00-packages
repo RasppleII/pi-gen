@@ -17,7 +17,6 @@ minecraft-pi python-minecraftpi
 alacarte rc-gui sense-hat
 claws-mail
 tree
-libgl1-mesa-dri libgles1-mesa libgles2-mesa xcompmgr
 piclone
 pulseaudio-module-bluetooth
 wiringpi pigpio python-pigpio python3-pigpio raspi-gpio python-gpiozero python3-gpiozero python3-rpi.gpio
