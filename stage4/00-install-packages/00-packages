@@ -13,13 +13,11 @@ smartsim penguinspuzzle
 python-pip python3-pip
 python3-numpy
 pypy
-python3-pifacecommon python3-pifacedigitalio python3-pifacedigital-scratch-handler python-pifacecommon python-pifacedigitalio
+python3-pifacecommon python3-pifacedigitalio python-pifacecommon python-pifacedigitalio
 minecraft-pi python-minecraftpi
 alacarte rc-gui sense-hat
 claws-mail
 tree
-scratch nuscratch
-greenfoot bluej
 nodered
 libgl1-mesa-dri libgles1-mesa libgles2-mesa xcompmgr
 geany
