@@ -5,10 +5,10 @@ NOOBS_DIR="${STAGE_WORK_DIR}/${IMG_DATE}-${IMG_NAME}${IMG_SUFFIX}"
 install -v -m 744	files/partition_setup.sh	${NOOBS_DIR}/
 install -v		files/partitions.json		${NOOBS_DIR}/
 install -v		files/os.json			${NOOBS_DIR}/
-install -v		files/Raspbian.png		${NOOBS_DIR}/
+install -v		files/RasppleII.png		${NOOBS_DIR}/
 install -v		files/release_notes.txt		${NOOBS_DIR}/
 
-tar -v -c -C		files/marketing			-f ${NOOBS_DIR}/marketing.tar .
+tar -v -c -C files/marketing -f - . | tar -C ${NOOBS_DIR} -x -f -
 
 BOOT_SIZE=$(xz --robot -l ${NOOBS_DIR}/boot.tar.xz  | grep totals | cut -f 5)
 ROOT_SIZE=$(xz --robot -l ${NOOBS_DIR}/root.tar.xz  | grep totals | cut -f 5)
