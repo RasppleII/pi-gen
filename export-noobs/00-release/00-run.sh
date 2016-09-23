@@ -29,3 +29,5 @@ sed ${NOOBS_DIR}/release_notes.txt -i -e "s|UNRELEASED|${IMG_DATE}|"
 sed ${NOOBS_DIR}/os.json -i -e "s|UNRELEASED|${IMG_DATE}|"
 
 cp -a ${NOOBS_DIR} ${DEPLOY_DIR}/
+
+ln -sfn "${IMG_DATE}-${IMG_NAME}${IMG_SUFFIX}" ${DEPLOY_DIR}/RasppleII
