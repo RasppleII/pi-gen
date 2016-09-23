@@ -54,3 +54,5 @@
 
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
+
+##LASTLINE## Everything here below here will be deleted at reboot.
