@@ -1,5 +1,11 @@
 #!/bin/bash -e
 
+# If you don't delete both, tzdata won't reconfigure properly
+on_chroot sh -e << EOF
+rm -f /etc/localtime /etc/timezone
+dpkg-reconfigure -f noninteractive tzdata
+EOF
+
 install -m 755 files/regenerate_ssh_host_keys		${ROOTFS_DIR}/etc/init.d/
 install -m 755 files/apply_noobs_os_config		${ROOTFS_DIR}/etc/init.d/
 install -m 755 files/resize2fs_once			${ROOTFS_DIR}/etc/init.d/
