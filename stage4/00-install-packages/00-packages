@@ -12,3 +12,33 @@ claws-mail
 tree
 piclone
 pulseaudio-module-bluetooth
+
+# archivers
+unar zip
+
+# netatalk
+libdb5.3 libssl1.0.0 libgcrypt20
+
+# samba
+samba
+
+# ADTPro
+librxtx-java xvfb xrdp
+
+# terminal multiplexing
+screen tmux
+
+# Comm tools
+curl lrzsz ftp lftp telnet-ssl
+
+# Web browsers
+lynx links
+
+# Usenet/Email
+tin mutt alpine
+
+# a2chat
+irssi
+
+# GSPort
+libpcap0.8
