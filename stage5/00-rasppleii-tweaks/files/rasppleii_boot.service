@@ -1,0 +1,9 @@
+[Unit]
+Description=Misc boot actions for Raspple II
+
+[Service]
+Type=oneshot
+ExecStart=/etc/rc.rasppleii_boot
+
+[Install]
+WantedBy=multi-user.target

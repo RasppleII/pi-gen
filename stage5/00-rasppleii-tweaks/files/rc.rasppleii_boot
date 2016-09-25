@@ -1,0 +1,10 @@
+#! /bin/sh
+
+# De-NOOBS Raspberry Pi's config.txt
+#
+# NOOBS has a bad habit of hard-coding your video settings to try and ensure
+# compatibility with broken HDMI displays.  If you are using composite, you
+# need to hold keys at install time to tell NOOBS.  But we silentinstall
+# Raspple II so you don't need any monitor at all.  Best option?  Remove the
+# lines added by NOOBS.
+sed -i -n '/^##LASTLINE##/q;p' /boot/config.txt
