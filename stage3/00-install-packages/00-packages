@@ -6,3 +6,5 @@ omxplayer
 raspberrypi-artwork
 policykit-1
 udisks2
+rfkill
+chromium-browser rpi-chromium-mods

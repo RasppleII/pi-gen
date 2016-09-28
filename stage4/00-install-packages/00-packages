@@ -12,6 +12,7 @@ claws-mail
 tree
 piclone
 pulseaudio-module-bluetooth
+realvnc-vnc-server realvnc-vnc-viewer
 
 # archivers
 unar zip
